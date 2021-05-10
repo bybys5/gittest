@@ -22,3 +22,9 @@ steps:
   name: keyPem
   inputs:
     secureFile: eg-monitor-keypair.pem
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+    echo ls -a
+  displayName: 'Run a multi-line script'
