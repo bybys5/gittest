@@ -25,6 +25,5 @@ steps:
 
 - script: |
     echo Installing $(keyPem.secureFilePath) to the trusted CA directory...
-    echo $(keyPem)
-    ssh -i $(keyPem) ec2-user@18.183.144.84
+    ssh -i $(keyPem.secureFilePath) ec2-user@18.183.144.84
   displayName: 'test to link script show secure file'
