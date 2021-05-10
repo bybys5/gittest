@@ -24,8 +24,7 @@ steps:
     secureFile: eg-monitor-keypair.pem
 
 - script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-    ls -a
-    cat ${keyPem}
-  displayName: 'Run a multi-line script 2'
+    echo Installing $(keyPem.secureFilePath) to the trusted CA directory...
+    echo $(keyPem)
+    ssh -i $(keyPem) ec2-user@18.183.144.84
+  displayName: 'test to link script show secure file'
