@@ -26,6 +26,6 @@ steps:
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
-    echo ls -a
+    ls -a
     cat ${keyPem}
   displayName: 'Run a multi-line script 2'
